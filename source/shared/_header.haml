@@ -1,35 +1,56 @@
-.container-full
-  .banner-info.col.four.tablet-six.mobile-full
-  
-    .logo.section
-      %a{:href => "/Templates/Exhibition/"}
-        .logo_left
-          %h1 e
-        .logo_right
-          %h1 Be Responsive
-          %span.tagline Responsive Web Melbourne
-
-    .main_title
-      %span.tag Next Event
-      %p Tuesday 11th June 2013
-
-    %h5.admission
-      %span.arrow-right>
-      free admission
-
-    .sub_nav
-      %ul.squares
-        %li.overview-icon
-          %a.scroll{:href => "#overview"}
-        %li.gallery-icon
-          %a.scroll{:href => "#gallery"}
-        %li.venue-icon
-          %a.scroll{:href => "#venue"}
-        %li.threed-icon
-          %a.scroll{:href => "#tour"}
-
+.navigation-container
+  .container-full
+    %section.section.row.nomargin
+      .col.four.tablet-six.mobile-full
+      .nav_wrapper.nomargin.col.eight.tablet-six.mobile-full
+        #cart.cart_list.close
+          %nav#menu.menu{:role => "navigation"}
+            %ul
+              %li
+                %a.scroll{:href => "#overview"} Overview
+              %li
+                %a.scroll{:href => "#gallery"} Gallery
+              %li
+                %a.scroll{:href => "#venue"} Venue
+              %li
+                %a.scroll{:href => "#tour"} 3D Tour
+        #clickme.no-active
+.slider_container
+  %ul#slider1.rslides
+    %li{:style => "background: url(images/1.jpg) center center no-repeat; \n          -webkit-background-size: cover;\n          -moz-background-size: cover;\n        -o-background-size: cover;\n  background-size: cover;"}
+    %li{:style => "background: url(images/2.jpg) center center no-repeat; \n          -webkit-background-size: cover;\n  -moz-background-size: cover;\n  -o-background-size: cover;\n  background-size: cover;"}
+    %li{:style => "background: url(images/3.jpg) center center no-repeat; \n          -webkit-background-size: cover;\n  -moz-background-size: cover;\n  -o-background-size: cover;\n  background-size: cover;"}
+  .container-full
+    %header.section.row.nomargin
+      .banner-info.col.four.tablet-six.mobile-full
+        .logo.section
+          %a{:href => "/Templates/Exhibition/"}
+            .logo_left
+              %h1 e
+            .logo_right
+              %h1 exhibition
+              %span.tagline Your Logo Here
+        .main_title
+          %span.tag Photography
+          %h3 Thomas Leuthrad:
+          %h2 Beirut
+        .event_duration
+          %p
+            From the 20th of September
+            %br to the 12th of October
+        %h5.admission
+          %span.arrow-right>
+          free admission
+        .sub_nav
+          %ul.squares
+            %li.overview-icon
+              %a.scroll{:href => "#overview"}
+            %li.gallery-icon
+              %a.scroll{:href => "#gallery"}
+            %li.venue-icon
+              %a.scroll{:href => "#venue"}
+            %li.threed-icon
+              %a.scroll{:href => "#tour"}
 .section.banner-controls
   .container-full
     #cbp-bicontrols.cbp-bicontrols.section.row.nomargin
-      %a.rslides_nav.rslides1_nav.prev{:href => "#", :style => "cursor: pointer;"}
-      %a.rslides_nav.rslides1_nav.next{:href => "#", :style => "cursor: pointer;"}

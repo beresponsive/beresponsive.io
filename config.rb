@@ -10,6 +10,17 @@ require 'susy'
 # Livereload
 activate :livereload
 
+##############################
+# Helpers
+require 'config/routes'
+require 'config/helpers'
+#require 'builder'
+
+helpers do
+  include RouteHelpers
+  include ApplicationHelpers
+end
+
 
 ##############################
 # Pages

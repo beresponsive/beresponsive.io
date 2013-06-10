@@ -15,6 +15,10 @@
     =# render_partial 'shared/header'
     
     = yield
-    =# render_partial 'shared/footer'
+    = render_partial 'shared/venue'
+    = render_partial 'shared/presentations'
+    = render_partial 'shared/register'
+    = render_partial 'shared/sponsors'
+    = render_partial 'shared/footer'
 
     = javascript_include_tag("application")
