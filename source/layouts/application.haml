@@ -24,42 +24,55 @@
           .span12
             %h1.logo-beresponsive Be Respsonsive
 
+ 
+        #intro.row
+          .span12
+            %p.lead
+              Responsive Web Melbourne is for people of all sectors and backgrounds
+              %br
+              from business analyst to designer, developer to project manager.
+            %p Our meetups are inclusive and not focused only on the technical side.
+
+
     %section.event-info
       .container
         .row
-          .span3
+          .span2.offset1
+            .event-info__box
+              %h4.event-info__box-title--main Next Event
+
+          .span2
             .event-info__box.icon-calendar
               %h4.event-info__box-title Date
-              %p.event-info__box-description Tuesday 11th June 2013
+              %p.event-info__box-description 
+                11th June 2013
 
           .span2
             .event-info__box.icon-clock
               %h4.event-info__box-title Time
               %p.event-info__box-description 6.30pm
 
-          .span3
+          .span5
             .event-info__box.icon-location
               %h4.event-info__box-title Venue
-              %p.event-info__box-description Traffic, 134 Gwynne Street, Richmond
+              %p.event-info__box-description 
+                Traffic, 134 Gwynne St
+                
+                Richmond
 
-          .event-info__box-register.span3.offset1
+          -#.event-info__box-register.span3.offset1
             = link_to "Register Now", register_url, :target => "_blank", :class => "btn"
 
 
-  %section#main
+  %section
     .container
-      .row
-        .span12
-          %p.lead
-            Responsive Web Melbourne is for people of all sectors and backgrounds from business analyst to designer, developer to project manager  - our meetups are inclusive and not focused only on the technical side.
-
       
       %h2.section-title Presentations
 
       .row
         .span2.visible-desktop
           = image_tag "avatars/zendy-wongso.jpg", :alt => "Zendy Wongso"
-        .span10
+        .span9
           %h4 The Current State of the Web
           %h5 Presented by Zendy Wongso
           %p Zendy is a Frontend Developer at Interact Creative and will provide us with some thoughts on current practices and methodologies that we use on the web, and what we need to learn and understand for the future.
@@ -67,7 +80,7 @@
       .row
         .span2.visible-desktop
           = image_tag "avatars/dave-sharpe.jpg", :alt => "Dave Sharpe"
-        .span10
+        .span9
           %h4 The 'short' History of Responsive
           %h5 Presented by Dave Sharpe
           %p We have a timeline presentation by Dave from Visual Jazz - the Front End Lead at one of the foremost FED Agencies in Australia. His slides are great and give a really nice view of how far the Responsive Web has come since 2011... just a few short years, but loads has happened. If you want to get some inspiration for your own designs, get insight into how their projects were managed, how much they cost, and what technology they used - this one isn't to be missed!
@@ -76,7 +89,7 @@
       .row
         .span2.visible-desktop
           = image_tag "avatars/yuan-wang.jpg", :alt => "Yuan Wang"
-        .span10
+        .span9
           %h4 Brave New World of Responsive Designing
           %h5 Presented by Yuan Wang
           %p Yuan is Digital Design Director at Traffic (also our host and sponsor) and will give us a unique insight into how to approach the creative design component of a responsive project.
@@ -84,13 +97,18 @@
   %section#sponsors
     .container
       %h2.section-title Sponsors.
-      %ul.sponsors-list
-        %li.sponsors-list__logo
-          = link_to image_tag("logos/traffic.png", :alt => "Traffic"), "http://traffic.com.au/", :target => "_blank"
-        %li.sponsors-list__logo
-          = link_to image_tag("logos/envato.png", :alt => "Envato"), "http://envato.com/", :target => "_blank"
-        %li.sponsors-list__logo
-          = link_to image_tag("logos/responsive-web-design-weekly.png", :alt => "Responsive Web Design Weekly"), "http://responsivedesignweekly.com/", :target => "_blank"
+      .row
+        .span10.offset1
+          .row-fluid
+            .span4
+              .sponsors-list__logo
+                = link_to image_tag("logos/traffic.png", :alt => "Traffic"), "http://traffic.com.au/", :target => "_blank"
+            .span4
+              .sponsors-list__logo
+                = link_to image_tag("logos/envato.png", :alt => "Envato"), "http://envato.com/", :target => "_blank"
+            .span4
+              .sponsors-list__logo
+                = link_to image_tag("logos/responsive-web-design-weekly.png", :alt => "Responsive Web Design Weekly"), "http://responsivedesignweekly.com/", :target => "_blank"
 
   %section#register
     .container
