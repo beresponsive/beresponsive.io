@@ -3,8 +3,12 @@
     .row
       .span6
         = link_to "Be Respsonsive", root_app_path, :class => "logo-berespsonsive--white"
-      .contact-link.span6
-        = link_to "Twitter", twitter_url, :class => "icon-twitter"
-        = link_to "Facebook", facebook_url, :class => "icon-facebook"
-        = link_to "Linkedin", linkedin_url, :class => "icon-linkedin"
-        = mail_to "Email", beresponsive_email, :class => "icon-mail"
+      .social-link.span6
+        = link_to twitter_url, :class => "icon-twitter social-link__icon" do
+          %span Twitter
+        = link_to facebook_url, :class => "icon-facebook social-link__icon" do
+          %span Facebook
+        = link_to linkedin_url, :class => "icon-linkedin social-link__icon" do
+          %span Linkedin
+        = link_to beresponsive_email, :class => "icon-mail social-link__icon" do
+          %span Email

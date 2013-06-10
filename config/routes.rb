@@ -12,7 +12,7 @@ module RouteHelpers
   end
 
   def beresponsive_email
-    "contact@beresponsive.io"
+    "mailto:contact@beresponsive.io"
   end
 
   def twitter_url
