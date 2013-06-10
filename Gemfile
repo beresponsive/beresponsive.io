@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 
 gem "middleman", "~>3.0.14"
 gem "middleman-livereload"
-gem "susy"
+#gem "susy"
+gem "bourbon"
 
 gem "activesupport", "~> 3.2.8"
 gem 'builder'

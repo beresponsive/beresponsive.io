@@ -1,20 +1,8 @@
-%footer
-  .container-full
-    .section.row.nomargin
-      .col.three.tablet-full.mobile-full
-        .logo.section
-          = link_to "Be Respsonsive", root_app_path, :class => "logo-berespsonsive--white"
-
-      .col.three.tablet-full.mobile-full
-
-      .col.six.tablet-full.mobile-full
-        %nav.menu{:role => "navigation"}
-          %ul
-            %li
-              %a.scroll{:href => "#overview"} Overview
-            %li
-              %a.scroll{:href => "#gallery"} Gallery
-            %li
-              %a.scroll{:href => "#venue"} Venue
-            %li
-              %a.scroll{:href => "#tour"} 3D Tour
+%footer.main
+  .container
+    .row
+      .span6
+        = link_to "Be Respsonsive", root_app_path, :class => "logo-berespsonsive--white"
+      .contact-link.span6
+        = link_to "@beresponsive", "https://twitter.com/beresponsiveio", :class => "contact-link--twitter"
+        = mail_to "contact@beresponsive.io", "contact@beresponsive.io", :class => "contact-link--email"
