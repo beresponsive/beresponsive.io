@@ -1,0 +1,33 @@
+footer.main
+  background: #111
+  padding: 50px 0 60px
+
+  .footer-logo
+    background: image-url("common/be-responsive_white.png") no-repeat 0 0
+    width: 230px
+    height: 40px
+    +image-replacement
+
+  .social-link
+    text-align: right
+
+  .social-link__icon
+    font-size: 22px
+    color: #aaa
+    text-decoration: none
+    margin: 0 2px
+    &:hover
+      color: #fff
+
+    &.icon-mail
+      padding: 0 7px
+
+    span 
+      +visually_hidden
+
+  +respond-to(phone)
+    .footer-logo 
+      margin: 0 auto 20px
+
+    .social-link
+      text-align: center

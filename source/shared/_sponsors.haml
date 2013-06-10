@@ -1,15 +1,14 @@
-%section#sponsors
+%section.sponsors
   .container
     %h2.section-title Sponsors.
     .row
       .span10.offset1
-        .row-fluid
-          .span4
-            .sponsors-list__logo
-              = link_to image_tag("logos/traffic.png", :alt => "Traffic"), "http://traffic.com.au/", :target => "_blank"
-          .span4
-            .sponsors-list__logo
-              = link_to image_tag("logos/envato.png", :alt => "Envato"), "http://envato.com/", :target => "_blank"
-          .span4
-            .sponsors-list__logo
-              = link_to image_tag("logos/responsive-web-design-weekly.png", :alt => "Responsive Web Design Weekly"), "http://responsivedesignweekly.com/", :target => "_blank"
+        .sponsors-list
+          .sponsors-list__logo
+            = link_to image_tag("sponsors/traffic.png", :alt => "Traffic"), "http://traffic.com.au/", :target => "_blank"
+
+          .sponsors-list__logo
+            = link_to image_tag("sponsors/envato.png", :alt => "Envato"), "http://envato.com/", :target => "_blank"
+
+          .sponsors-list__logo
+            = link_to image_tag("sponsors/responsive-web-design-weekly.png", :alt => "Responsive Web Design Weekly"), "http://responsivedesignweekly.com/", :target => "_blank"

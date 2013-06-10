@@ -7,6 +7,15 @@ html
 body
   height: 100%
 
+  +respond-to('phone')
+    padding: 0
+
+.container
+  +respond-to('phone')
+    margin-left: 20px
+    margin-right: 20px
+
+
 p 
   font-family: $sans-font-stack
   font-weight: 300
