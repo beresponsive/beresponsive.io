@@ -1,3 +1,8 @@
+$logo-width-desktop:  500px
+$logo-height-desktop: 95px
+$logo-width-mobile:   $logo-width-desktop * 0.5
+$logo-height-mobile:  $logo-height-desktop * 0.5
+
 header.main
   background-image: image-url("common/header_glow.png"), image-url("common/header_tile.png")
   background-position: center -90px, 0 0
@@ -7,13 +12,16 @@ header.main
 
   .logo-beresponsive
     margin: 30px auto
+    width: $logo-width-desktop
+    height: $logo-height-desktop
     background: image-url("common/logo-be-responsive.png") no-repeat 0 0
-    width: 500px
-    height: 95px
+    +image-2x(image-path("common/logo-be-responsive@2x.png"), $logo-width-desktop, $logo-height-desktop)
     +image-replacement
     +background-size(contain)
 
 
     +respond-to('phone')
-      width: 500px*0.5
-      height: 95px*0.5
+      width: $logo-width-mobile
+      height: $logo-height-mobile
+      background: image-url("common/logo-be-responsive.png") no-repeat 0 0
+      +image-2x(image-path("common/logo-be-responsive@2x.png"), $logo-width-mobile, $logo-height-mobile)

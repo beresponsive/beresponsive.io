@@ -3,9 +3,10 @@ footer.main
   padding: 50px 0 60px
 
   .footer-logo
-    background: image-url("common/be-responsive_white.png") no-repeat 0 0
     width: 230px
     height: 40px
+    background: image-url("common/logo-be-responsive_white.png") no-repeat 0 0
+    +image-2x(image-path("common/logo-be-responsive_white@2x.png"), 230px, 40px)
     +image-replacement
 
   .social-link
