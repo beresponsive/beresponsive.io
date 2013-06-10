@@ -1,2 +1,35 @@
-%header
-  %h1 Be Responsive
+.container-full
+  .banner-info.col.four.tablet-six.mobile-full
+  
+    .logo.section
+      %a{:href => "/Templates/Exhibition/"}
+        .logo_left
+          %h1 e
+        .logo_right
+          %h1 Be Responsive
+          %span.tagline Responsive Web Melbourne
+
+    .main_title
+      %span.tag Next Event
+      %p Tuesday 11th June 2013
+
+    %h5.admission
+      %span.arrow-right>
+      free admission
+
+    .sub_nav
+      %ul.squares
+        %li.overview-icon
+          %a.scroll{:href => "#overview"}
+        %li.gallery-icon
+          %a.scroll{:href => "#gallery"}
+        %li.venue-icon
+          %a.scroll{:href => "#venue"}
+        %li.threed-icon
+          %a.scroll{:href => "#tour"}
+
+.section.banner-controls
+  .container-full
+    #cbp-bicontrols.cbp-bicontrols.section.row.nomargin
+      %a.rslides_nav.rslides1_nav.prev{:href => "#", :style => "cursor: pointer;"}
+      %a.rslides_nav.rslides1_nav.next{:href => "#", :style => "cursor: pointer;"}
