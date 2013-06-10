@@ -1,21 +1,15 @@
-%section.sponsors-section
-  .container-full
-    .section.row.nomargin
-      .desktop-full.tablet-full.mobile-full
-        %h1.section-title Sponsors.
-    .fluidHeight_sponsors
-      .sliderContainer
-        .iosSlider_sponsors
-          .sponsor
-            .item
-              %a.img_wrapper
-                %img{:alt => "image", :src => "images/sponsor1.png"}
-            .item
-              %a.img_wrapper
-                %img{:alt => "image", :src => "images/sponsor2.png"}
-            .item
-              %a.img_wrapper
-                %img{:alt => "image", :src => "images/sponsor3.png"}
-
-  //.controls-sponsors.next
-  //.controls-sponsors.prev
+%section#sponsors
+  .container
+    %h2.section-title Sponsors.
+    .row
+      .span10.offset1
+        .row-fluid
+          .span4
+            .sponsors-list__logo
+              = link_to image_tag("logos/traffic.png", :alt => "Traffic"), "http://traffic.com.au/", :target => "_blank"
+          .span4
+            .sponsors-list__logo
+              = link_to image_tag("logos/envato.png", :alt => "Envato"), "http://envato.com/", :target => "_blank"
+          .span4
+            .sponsors-list__logo
+              = link_to image_tag("logos/responsive-web-design-weekly.png", :alt => "Responsive Web Design Weekly"), "http://responsivedesignweekly.com/", :target => "_blank"
