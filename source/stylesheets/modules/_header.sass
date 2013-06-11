@@ -1,6 +1,6 @@
 $logo-width-desktop:  500px
 $logo-height-desktop: 95px
-$logo-width-mobile:   $logo-width-desktop * 0.5
+$logo-width-mobile:   $logo-width-desktop * 0.52
 $logo-height-mobile:  $logo-height-desktop * 0.5
 
 header.main
@@ -25,3 +25,4 @@ header.main
       height: $logo-height-mobile
       background: image-url("common/logo-be-responsive.png") no-repeat 0 0
       +image-2x(image-path("common/logo-be-responsive@2x.png"), $logo-width-mobile, $logo-height-mobile)
+      +background-size( cover )
