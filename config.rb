@@ -7,8 +7,16 @@ require 'builder'
 # Susy grids in Compass
 #require 'susy'
 
-# Livereload
-activate :livereload
+##############################
+# Development config
+configure :development do
+  # Livereload
+  activate :livereload
+
+  activate :google_analytics do |ga|
+    ga.tracking_id = false
+  end
+end
 
 ##############################
 # Helpers
