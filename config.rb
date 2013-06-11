@@ -7,8 +7,16 @@ require 'builder'
 # Susy grids in Compass
 #require 'susy'
 
-# Livereload
-activate :livereload
+##############################
+# Development config
+configure :development do
+  # Livereload
+  activate :livereload
+
+  activate :google_analytics do |ga|
+    ga.tracking_id = false
+  end
+end
 
 ##############################
 # Helpers
@@ -36,14 +44,19 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+  # Activate google-analytics extension
+  activate :google_analytics do |ga|
+    ga.tracking_id = 'UA-41620212-1'
+  end
+
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
-  # activate :cache_buster
+  activate :cache_buster
 
   # Use relative URLs
   # activate :relative_assets
