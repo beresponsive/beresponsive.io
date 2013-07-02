@@ -4,6 +4,15 @@
 
     .row.presentation
       .span2.hidden-phone
+        = image_tag "avatars/ben-schwarz.jpg", :alt => "Ben Schwarz", :class => "presentation__avatar"
+      .span9
+        %h4.presentation__topic A million media queries
+        %h5.presentation__presenter Ben Schwarz
+        %p 
+          Ben is a full stack web hacker, tool maker, and tip sharer from Melbourne. He is also the author of #{link_to "Gallery CSS", "http://benschwarz.github.io/gallery-css/", :target => "_blank"}.
+
+    .row.presentation
+      .span2.hidden-phone
         = image_tag "avatars/jordan-lewis.jpg", :alt => "Jordan Lewis", :class => "presentation__avatar"
       .span9
         %h4.presentation__topic Multi-device and browser testing for Responsive Web Design

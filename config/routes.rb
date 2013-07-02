@@ -4,7 +4,7 @@ module RouteHelpers
   end
 
   def register_url
-    "http://www.meetup.com/Responsive-Web-Melbourne/"
+    "http://www.meetup.com/Be-Responsive-Melbourne/"
   end
 
   def linkedin_url
