@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 
 gem "middleman", "~>3.0.14"
 gem "middleman-livereload"
+gem "middleman-blog"
 gem "bourbon"
 #gem "susy"
 
