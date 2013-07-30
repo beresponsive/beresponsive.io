@@ -7,7 +7,10 @@ gem "middleman-livereload"
 gem "middleman-google-analytics"
 gem "middleman-blog"
 # gem "bourbon"
-# gem "susy"
+
+gem "susy"
+# gem 'compass', '>= 0.12.2'
+# gem 'compass-rails', '>= 1.0.3'
 
 gem 'builder'
 

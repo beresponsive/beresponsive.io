@@ -7,19 +7,70 @@
     %meta{:content => "on", "http-equiv" => "cleartype"}
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
     %meta{:content => "width=device-width", :name => "viewport"}/
-    = stylesheet_link_tag "application"
+    / = stylesheet_link_tag "application"
 
-    = javascript_include_tag("head")
-    :javascript
-      WebFont.load({
-        google: { families: [ 'Montserrat:400,700', 'Open+Sans:400,300,600' ] },
-        custom: {families: ['icomoon'], urls: ['#{root_app_path}stylesheets/fonts.css']}
-      });
+    / = javascript_include_tag("head")
+    / :javascript
+    /   WebFont.load({
+    /     google: { families: [ 'Montserrat:400,700', 'Open+Sans:400,300,600' ] },
+    /     custom: {families: ['icomoon'], urls: ['#{root_app_path}stylesheets/fonts.css']}
+    /   });
 
 
   %body
-    = render_partial 'shared/header'
-    = yield
-    = render_partial 'shared/footer'
+    / = render_partial 'shared/header'
+    / = yield
+    / = render_partial 'shared/footer'
+    %header.mainHeader
+      %h1 Title
+      %p Description
+      %p Call to join our next event
+
+    %section.homePanel.homePanel--event
+      %h2 Next event
+      %p
+        %span Date
+        %a Downloadable calendar
+      %p
+        %span Venue
+        %div Map
+
+    %section.homePanel.homePanel--speaker
+      %h2 Speakers
+      %articles
+        %h3 #1 Title
+        %p #1 Description
+        %div.speakerBio
+          %img
+          %p Bio text
+      %articles
+        %h3 #2 Title
+        %p #2 Description
+        %div.speakerBio
+          %img
+          %p Bio text
+      %articles
+        %h3 #3 Title
+        %p #3 Description
+        %div.speakerBio
+          %img
+          %p Bio text
+      %p
+        %a Call to join our next event
+
+    %section.homePanel.homePanel--sponsor
+      %h2 Sponsors
+      %p
+        %a Call to be our sponsor
+      %p
+        %a
+          %img
+        %a
+          %img
+        %a
+          %img
+        %a
+          %img
+
 
     = google_analytics_tag
