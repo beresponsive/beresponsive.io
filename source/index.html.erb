@@ -1,23 +1,12 @@
 ---
-layout: application
+layout: layout_main
 ---
 
-    <div class="container homePanel homePanel--event">
-      <section>
-        <h2>Next event</h2>
-        <p>
-          <span>Date</span>
-          <time></time>
-          <a>Downloadable calendar</a>
-        </p>
-        <p>
-          <span>Venue</span>
-          <div>Map</div>
-        </p>
-      </section>
-    </div>
+    <%= partial 'partial/hero' %>
 
-    <div class="container homePanel homePanel--speaker">
+    <%= partial 'partial/event' %>
+
+    <div class="panel panel--speaker">
       <section>
         <h2>Speakers</h2>
         <articles>
@@ -25,7 +14,7 @@ layout: application
           <p>#1 Description</p>
           <figure class='speakerBio'>
             <img>
-            <figcaption>Bio text</figcaption>
+            <figcaption>Andrew Fisher</figcaption>
           </figure>
         </articles>
         <articles>
@@ -33,24 +22,16 @@ layout: application
           <p>#2 Description</p>
           <figure class='speakerBio'>
             <img>
-            <figcaption>Bio text</figcaption>
-          </figure>
-        </articles>
-        <articles>
-          <h3>#3 Title</h3>
-          <p>#3 Description</p>
-          <figure class='speakerBio'>
-            <img>
-            <figcaption>Bio text</figcaption>
+            <figcaption>Traffic's team</figcaption>
           </figure>
         </articles>
         <p>
           <a>Call to join our next event</a>
         </p>
       </section>
-    </div>
+    </div> <!-- eo .panel--speaker -->
 
-    <div class="container homePanel homePanel--sponsor">
+    <div class="panel panel--sponsor">
       <section>
         <h2>Sponsors</h2>
         <p>
@@ -71,4 +52,4 @@ layout: application
           </a>
         </p>
       </section>
-    </div>
+    </div> <!-- eo .panel--sponsor -->
