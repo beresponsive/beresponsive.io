@@ -10,20 +10,22 @@ layout: layout_main
       <section>
         <h2>Speakers</h2>
         <articles>
-          <h3>#1 Title</h3>
-          <p>#1 Description</p>
-          <figure class='speakerBio'>
-            <img>
-            <figcaption>Andrew Fisher</figcaption>
-          </figure>
+          <header>
+            <h3>#1 Title</h3>
+            <p>#1 Description</p>
+          </header>
+          <aside>
+            <%= partial 'partial/speaker/andrewfisher' %>
+          </aside>
         </articles>
         <articles>
-          <h3>#2 Title</h3>
-          <p>#2 Description</p>
-          <figure class='speakerBio'>
-            <img>
-            <figcaption>Traffic's team</figcaption>
-          </figure>
+          <header>
+            <h3>#2 Title</h3>
+            <p>#2 Description</p>
+          </header>
+          <aside>
+            <%= partial 'partial/speaker/yuanwang' %>
+          </aside>
         </articles>
         <p>
           <a>Call to join our next event</a>
